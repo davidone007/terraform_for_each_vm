@@ -1,0 +1,18 @@
+# Configuración del Backend Remoto
+# Generado: Mon Oct 13 16:30:11 -05 2025
+
+Resource Group:    terraform-backend-rg
+Storage Account:   tfstate90941
+Container:         tfstate
+Región:            East US
+Estado remoto:     terraform.tfstate
+
+# Para reconfigurar manualmente:
+terraform init -reconfigure \
+  -backend-config="resource_group_name=terraform-backend-rg" \
+  -backend-config="storage_account_name=tfstate90941" \
+  -backend-config="container_name=tfstate" \
+  -backend-config="key=terraform.tfstate"
+
+# Para migrar estado existente:
+terraform init -migrate-state
