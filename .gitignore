@@ -33,3 +33,36 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Backend configuration (contiene información sensible)
+backend-config.txt
+providers.tf.backup
+
+# Deployment info
+deployment-info.txt
+
+# Plan files
+tfplan
+tfplan.json
+
+# SSH Keys
+*.pem
+*.key
+id_rsa*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+
+# Backup files
+*.backup
+*.bak
+*~

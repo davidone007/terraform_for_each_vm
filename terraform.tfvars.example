@@ -1,0 +1,9 @@
+# Ejemplo de terraform.tfvars
+# Copia este archivo a terraform.tfvars y completa con tus valores
+
+region       = "East US"
+user         = "adminuser"
+password     = "TU_PASSWORD_SEGURA_AQUI"  # Mínimo 12 caracteres, con mayúsculas, minúsculas y números
+prefix_name  = "devops"
+servers      = ["jenkins", "nginx"]
+size_servers = "Standard_B2s"  # Opcional, por defecto Standard_B2s
